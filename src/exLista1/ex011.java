@@ -6,14 +6,12 @@ public class ex011 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Digite sua altura em metros: ");
+        System.out.println("Digite a altura em metros: ");
         float altura = entrada.nextFloat();
 
-        float pesoIdealM = (float) ((72.7*altura) - 58);
-        float pesoIdealF = (float) ((62.1*altura) - 44.7);
+        float pesoIdeal = (float) ((72.7*altura) - 58);
 
-        System.out.printf("Para homens o peso ideal é %.2f Kg", pesoIdealM);
-        System.out.printf("\nPara mulheres o peso ideal é %.2f Kg", pesoIdealF);
+        System.out.printf("O peso ideal é %.2f Kg", pesoIdeal);
 
     }
 }
