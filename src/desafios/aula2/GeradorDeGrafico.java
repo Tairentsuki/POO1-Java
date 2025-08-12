@@ -24,8 +24,7 @@ public class GeradorDeGrafico {
         String valores = "['y', 'x'],";
         for(int contador = 1; contador <= qnt; contador++){
             if(contador < qnt){
-                valores += "" +
-                        "\n['" + contador + "'," + (random.nextInt(valor_minimo, valor_maximo) + 1) + "],";
+                valores += "\n['" + contador + "'," + (random.nextInt(valor_minimo, valor_maximo) + 1) + "],";
             }else{
                 valores += "\n[" + (random.nextInt(valor_minimo, valor_maximo) + 1) + "," + contador + "]";
             }
