@@ -1,6 +1,6 @@
 package aula2;
 
-public class Teste {
+public class Explicacao {
     public static void main(String[] args) {
 
         System.out.println("=-=-=-=-=-=-=For=-=-=-=-=-=-=");
