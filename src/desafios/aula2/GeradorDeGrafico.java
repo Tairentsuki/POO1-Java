@@ -12,11 +12,11 @@ public class GeradorDeGrafico {
         Scanner entrada = new Scanner(System.in);
 
         // Obter valores
-        System.out.print("Qual a quantidade de numeros que devem ser gerados em uma amostra aleatória:");
+        System.out.print("Qual a quantidade de numeros que devem ser gerados em uma amostra aleatória: ");
         int qnt = entrada.nextInt();
-        System.out.print("Quais os valores mínimos possiveis da amostra:");
+        System.out.print("Quais os valores mínimos possiveis da amostra: ");
         int valor_minimo = entrada.nextInt();
-        System.out.print("Quais os valores maximos possiveis da amostra:");
+        System.out.print("Quais os valores maximos possiveis da amostra: ");
         int valor_maximo = entrada.nextInt();
 
         // Gerar valores aleatórios
@@ -26,7 +26,7 @@ public class GeradorDeGrafico {
             if(contador < qnt){
                 valores += "\n['" + contador + "'," + (random.nextInt(valor_minimo, valor_maximo) + 1) + "],";
             }else{
-                valores += "\n[" + (random.nextInt(valor_minimo, valor_maximo) + 1) + "," + contador + "]";
+                valores += "\n['" + contador + "'," + (random.nextInt(valor_minimo, valor_maximo) + 1) + "]";
             }
         }
 
