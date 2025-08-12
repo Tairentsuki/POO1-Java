@@ -20,6 +20,14 @@ public class GeradorDeGrafico {
         int valor_maximo = entrada.nextInt();
 
         // Gerar valores aleatórios
+
+        if(valor_minimo > valor_maximo){
+            System.out.println("valores mínimos e máximos invertidos, será corrigido pelo programa.");
+            int aux = valor_minimo;
+            valor_minimo = valor_maximo;
+            valor_maximo = aux;
+        }
+
         Random random = new Random();
         String valores = "['y', 'x'],";
         for(int contador = 1; contador <= qnt; contador++){
