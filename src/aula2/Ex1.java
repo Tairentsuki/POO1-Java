@@ -1,6 +1,6 @@
 package aula2;
 // um programa onde um usuário escolha um número inicial e final de uma tabuada
-// Se ele inverter o inicio e o fim, devemos avisar e ordenar, por exemplo 2000 - 1000 fazemos de 1000 a 2000
+// Se ele inverter o início e o fim, devemos avisar e ordenar, por exemplo 2000 - 1000 fazemos de 1000 a 2000
 // Utilizando o for
 import java.util.Scanner;
 
