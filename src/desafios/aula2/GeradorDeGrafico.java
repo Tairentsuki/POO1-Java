@@ -47,8 +47,8 @@ public class GeradorDeGrafico {
         System.out.println(valores);
 
         // Gerar arquivo
-        String caminhoArquivo = "src/desafios/aulas.aula2/grafico.html";
-        String conteudo = Files.readString(Path.of("src/desafios/aulas.aula2/GoogleCharts.html")).replace("<<valores>>", valores);
+        String caminhoArquivo = "src/desafios/aula2/grafico.html";
+        String conteudo = Files.readString(Path.of("src/desafios/aula2/GoogleCharts.html")).replace("<<valores>>", valores);
         System.out.println(conteudo);
         try {
             FileWriter writer = new FileWriter(caminhoArquivo);
