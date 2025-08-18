@@ -14,7 +14,6 @@ public class Ex020{
         for(int contador = 1; contador <= numeroDeNotas; contador++){
             System.out.print("Digite a "+contador+ "° nota: ");
             notas[contador-1] = entrada.nextFloat();
-            System.out.println(notas[contador-1]);
 
         }
 
@@ -22,7 +21,7 @@ public class Ex020{
         for(float elemento : notas){
             somatorio+= elemento;
         }
-        float media = somatorio/numeroDeNotas;
+        float media = somatorio/notas.length;
         System.out.println("A média das notas é: " + media);
 
     }
