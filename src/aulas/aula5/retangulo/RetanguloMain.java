@@ -1,4 +1,4 @@
-package aulas.aula5;
+package aulas.aula5.retangulo;
 
 public class RetanguloMain {
     public static void main(String[] args) {
