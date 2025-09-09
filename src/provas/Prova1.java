@@ -77,5 +77,6 @@ public class Prova1 {
                 System.out.printf("%04d: %s\n", elemento, "#".repeat(elemento));
             }
         }
+
     }
 }

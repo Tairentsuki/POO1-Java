@@ -33,10 +33,5 @@ public class Quadrado {
         return lado * lado;
     }
 
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Quadrado{");
-        sb.append('}');
-        return sb.toString();
-    }
+
 }
