@@ -1,6 +1,4 @@
-package exercicios;
-
-import org.w3c.dom.ls.LSOutput;
+package outrosEx;
 
 import java.util.Scanner;
 
@@ -32,9 +30,9 @@ public class av {
         int linhas = num;
         int colunas = num;
 
-        System.out.printf(" ");
+        System.out.print(" ");
         System.out.printf("=".repeat(maior+Math.abs(menor)+9));
-        System.out.printf("\n ");
+        System.out.print("\n ");
         System.out.printf("=".repeat(maior+Math.abs(menor)+9));
         for (int linha = 0; linha < linhas; linha++) {
             for (int coluna = 0; coluna < colunas; coluna++) {
@@ -45,7 +43,7 @@ public class av {
                     System.out.print("-".repeat(Math.abs(menor)));
                 }else{
                     System.out.printf("\n %03d| ", matriz[linha][coluna]);
-                    System.out.printf("-".repeat(Math.abs(menor)-Math.abs(matriz[linha][coluna])));
+                    System.out.print("-".repeat(Math.abs(menor)-Math.abs(matriz[linha][coluna])));
 
                 }
 
@@ -54,21 +52,21 @@ public class av {
                 }
 
                 if(matriz[linha][coluna] > 0){
-                    System.out.printf("-".repeat(maior-matriz[linha][coluna]));
+                    System.out.print("-".repeat(maior-matriz[linha][coluna]));
                     System.out.printf("|%03d", matriz[linha][coluna]);
                 }
 
                 if(matriz[linha][coluna]  <= 0){
                     System.out.print("-".repeat(maior));
-                    System.out.printf("|");
-                    System.out.printf("---");
+                    System.out.print("|");
+                    System.out.print("---");
                 }
             }
         }
 
-        System.out.printf("\n ");
+        System.out.print("\n ");
         System.out.printf("=".repeat(maior+Math.abs(menor)+9));
-        System.out.printf("\n ");
+        System.out.print("\n ");
         System.out.printf("=".repeat(maior+Math.abs(menor)+9));
         matriz[0][0] = 0;
 
