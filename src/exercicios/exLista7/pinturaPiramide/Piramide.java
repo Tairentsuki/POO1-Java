@@ -6,7 +6,6 @@ public class Piramide {
     private double h;
     private int tipoTinta;
 
-    // Constantes
     private final double PRECO_TIPO1 = 127.90;
     private final double PRECO_TIPO2 = 258.98;
     private final double PRECO_TIPO3 = 344.34;

@@ -90,10 +90,19 @@ public class Cone {
 
     @Override
     public String toString() {
+        StringBuilder str = new StringBuilder();
+        str.append("\n- Cone");
+        str.append("\nRaio: ").append(getRaio());
+        str.append("\nAltura: ").append(getAltura());
+        str.append("\nNível: ").append(getTipo());
+        str.append("\nGeratriz").append(getGeratriz());
+        str.append("\nÁrea do Fundo: ").append(getAreaBase());
+        str.append("\nÁrea Lateral Cone: ");
         final int TAMANHO_QUEBRA_LINHA = 30;
+
         String saida = "\n- Cone";
-        saida += String.format("\nRaio: %f", getRaio());
-        saida += String.format("\nAltura: %f", getAltura());
+        saida += String.format("\nRaio: %.2f", getRaio());
+        saida += String.format("\nAltura: %.2f", getAltura());
         saida += String.format("\nNível: %d", getTipo());
         saida += String.format("\n%s", "-".repeat(TAMANHO_QUEBRA_LINHA));
         saida += String.format("\nGeratriz: %f", getGeratriz());
