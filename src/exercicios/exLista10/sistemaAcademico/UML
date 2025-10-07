@@ -1,0 +1,66 @@
+@startuml
+title Sistema Acadêmico Básico
+
+class Curso {
+  -id: int
+  -nome: String
+}
+
+class Fase {
+  -id: int
+  -numero: int
+}
+
+class Disciplina {
+  -id: int
+  -nome: String
+  -cargaHoraria: int
+}
+
+class Professor {
+  -id: int
+  -nome: String
+}
+
+class Aluno {
+  -id: int
+  -nome: String
+  -matricula: String
+}
+
+class OfertaDisciplina {
+  -id: int
+  -ano: int
+  -semestre: int
+}
+
+class MatriculaDisciplina {
+  -id: int
+  -situacao: String // APROVADO, REPROVADO, REPROVADO_POR_FALTA
+}
+
+class Frequencia {
+  -id: int
+  -data: Date
+  -presente: boolean
+}
+
+class Avaliacao {
+  -id: int
+  -nota: double
+  -data: Date
+}
+
+' RELACIONAMENTOS
+Curso "1" --> "N" Fase
+Fase "1" --> "N" Disciplina
+Disciplina "N" -- "N" Professor
+Aluno "N" -- "1" Curso
+Disciplina "1" --> "N" OfertaDisciplina
+Aluno "N" -- "N" OfertaDisciplina : "MatriculaDisciplina"
+MatriculaDisciplina "1" --> "N" Frequencia
+MatriculaDisciplina "1" --> "N" Avaliacao
+Professor "1" --> "N" Frequencia : "registradaPor"
+Professor "1" --> "N" Avaliacao : "registradaPor"
+
+@enduml
