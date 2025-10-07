@@ -7,9 +7,11 @@ public class Motor {
     private String combustivel;
 
     public String toString() {
-        return "Marca: " + marca +
-                ", Potência: " + potencia +
-                ", Cilindros: " + cilindros +
-                ", Combustível: " + combustivel;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Marca: ").append(marca);
+        sb.append(", Potência: ").append(potencia);
+        sb.append(", Cilindros: ").append(cilindros);
+        sb.append(", Combustível: ").append(combustivel);
+        return sb.toString();
     }
 }

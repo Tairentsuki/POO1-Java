@@ -9,11 +9,13 @@ public class Carro {
     protected Motor motor;
 
     public String toString() {
-        return "Fabricante: " + fabricante +
-                ", Modelo: " + modelo +
-                ", Cor: " + cor +
-                ", Ano: " + ano +
-                ", Dono: " + (dono != null ? dono.toString() : "Nenhum") +
-                ", Motor: " + (motor != null ? motor.toString() : "Nenhum");
+        StringBuilder sb = new StringBuilder();
+        sb.append("Fabricante: ").append(fabricante);
+        sb.append(", Modelo: ").append(modelo);
+        sb.append(", Cor: ").append(cor);
+        sb.append(", Ano: ").append(ano);
+        sb.append(", Dono: ").append(dono != null ? dono.toString() : "Nenhum");
+        sb.append(", Motor: ").append(motor != null ? motor.toString() : "Nenhum");
+        return sb.toString();
     }
 }

@@ -31,9 +31,9 @@ public class av {
         int colunas = num;
 
         System.out.print(" ");
-        System.out.printf("=".repeat(maior+Math.abs(menor)+9));
+        System.out.printf("=".repeat(maior+Math.abs(menor)+10));
         System.out.print("\n ");
-        System.out.printf("=".repeat(maior+Math.abs(menor)+9));
+        System.out.printf("=".repeat(maior+Math.abs(menor)+10));
         for (int linha = 0; linha < linhas; linha++) {
             for (int coluna = 0; coluna < colunas; coluna++) {
 
@@ -53,21 +53,21 @@ public class av {
 
                 if(matriz[linha][coluna] > 0){
                     System.out.print("-".repeat(maior-matriz[linha][coluna]));
-                    System.out.printf("|%03d", matriz[linha][coluna]);
+                    System.out.printf(" |%03d", matriz[linha][coluna]);
                 }
 
                 if(matriz[linha][coluna]  <= 0){
                     System.out.print("-".repeat(maior));
-                    System.out.print("|");
+                    System.out.print(" |");
                     System.out.print("---");
                 }
             }
         }
 
         System.out.print("\n ");
-        System.out.printf("=".repeat(maior+Math.abs(menor)+9));
+        System.out.printf("=".repeat(maior+Math.abs(menor)+10));
         System.out.print("\n ");
-        System.out.printf("=".repeat(maior+Math.abs(menor)+9));
+        System.out.printf("=".repeat(maior+Math.abs(menor)+10));
         matriz[0][0] = 0;
 
 //        System.out.printf("\n\n\n\n\n");

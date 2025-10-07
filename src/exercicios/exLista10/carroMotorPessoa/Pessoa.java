@@ -5,6 +5,8 @@ public class Pessoa {
     private String endereco;
 
     public String toString() {
-        return "Nome: " + nome + ", Endereço: " + endereco;
-    }
-}
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nome: ").append(nome);
+        sb.append(", Endereço: ").append(endereco);
+        return sb.toString();
+    }}
