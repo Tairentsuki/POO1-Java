@@ -1,0 +1,9 @@
+alterar a classe pessoa para que ela possa permitir a inclusão dos seguintes atributos:
+
+Data de nascimento, email e telefone x
+
+Validações:
+	Não pode incluir com mesmo nome x
+	É obrigatório ter nome e email x
+	Ter um método que retorne aniversáriantes de determinado mês
+	Método que retorne todas as pessoas que tem email em um determinado dominio  x

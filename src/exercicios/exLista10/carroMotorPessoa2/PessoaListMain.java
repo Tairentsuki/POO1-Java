@@ -14,7 +14,7 @@ public class PessoaListMain {
         listaPessoas.Adicionar(pessoa);
 
         dataNascimento = LocalDate.of(2005, 4, 20);
-        pessoa = new Pessoa("Nome2", "email2@outlook.com", dataNascimento, "0000000000000");
+        pessoa = new Pessoa("NomE1", "email2@outlook.com", dataNascimento, "0000000000000");
         listaPessoas.Adicionar(pessoa);
 
         dataNascimento = LocalDate.of(1950, 5, 20);
@@ -38,7 +38,7 @@ public class PessoaListMain {
 
         System.out.println("=".repeat(100));
 
-        String dominioABuscar = "@outlook.com";
+        String dominioABuscar = "@ouTlook.com";
         List<Pessoa> buscarPorDominioEmail = listaPessoas.BuscarPorDominioEmail(dominioABuscar);
         System.out.printf("\nBuscando pelo dominio: %s \n", dominioABuscar);
 
@@ -51,6 +51,7 @@ public class PessoaListMain {
             System.out.println(sb);
         }
         System.out.println("=".repeat(100));
+
 
     }
 }
