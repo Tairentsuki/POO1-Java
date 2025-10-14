@@ -5,14 +5,29 @@ public class SistemaDeSom extends EquipamentoEletronico {
     private String modelo;
     private float potencia;
 
-    public String getMarca() { return marca; }
-    public void setMarca(String marca) { this.marca = marca; }
+    public String getMarca() {
+        return marca;
+    }
 
-    public String getModelo() { return modelo; }
-    public void setModelo(String modelo) { this.modelo = modelo; }
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
 
-    public float getPotencia() { return potencia; }
-    public void setPotencia(float potencia) { this.potencia = potencia; }
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public float getPotencia() {
+        return potencia;
+    }
+
+    public void setPotencia(float potencia) {
+        this.potencia = potencia;
+    }
 
     public String toString() {
         StringBuilder sb = new StringBuilder();

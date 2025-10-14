@@ -1,8 +1,13 @@
 package exercicios.exLista10.homeTheater;
 
-public class HomeTheater extends EquipamentoEletronico {
+public class HomeTheater {
     protected SistemaDeSom som;
     protected SistemaDeVideo video;
+
+    public HomeTheater() {
+        som = new SistemaDeSom();
+        video = new SistemaDeVideo();
+    }
 
     public SistemaDeSom getSom() {
         return som;
